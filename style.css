@@ -227,6 +227,7 @@ section{padding:100px 24px}
   .seguros-grid{grid-template-columns:repeat(2,1fr)}
   .about-grid,.auditoria-grid,.pas-grid,.contacto-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
+  .nosotros-values{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:16px;box-shadow:var(--shadow)}
@@ -244,6 +245,16 @@ section{padding:100px 24px}
   .form-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .about-map-stats{grid-template-columns:1fr}
+  .nosotros-stats{flex-wrap:wrap}
+  .nosotros-stat{flex:0 0 50%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.08);padding:12px 8px}
+  .nosotros-stat:nth-child(odd){border-right:1px solid rgba(255,255,255,0.08)}
+  .nosotros-stat:nth-child(3),.nosotros-stat:nth-child(4){border-bottom:none}
+  .nosotros-stat .num{font-size:38px}
+  .nosotros-stats-bar{padding:32px 16px;margin-bottom:40px}
+  .timeline-bar{margin-top:28px}
+  .timeline-year{font-size:12px}
+  .nosotros-values{grid-template-columns:repeat(2,1fr)}
+  .nosotros-header{padding:48px 24px 0}
 }
 
 /* === ANIMATIONS === */
