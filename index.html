@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Fernández - Asesores en Seguros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="src/logo.png" alt="Grupo Fernández">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Inicio</a>
+      <a href="#seguros">Seguros</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#auditoria">Auditoría IA</a>
+      <a href="#pas">Para PAS</a>
+      <a href="#contacto" class="nav-cta">Contactanos</a>
+    </div>
+    <button class="nav-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <h1>PROTEGEMOS LO QUE<br><em>MÁS IMPORTA</em></h1>
+    <p>58 años construyendo confianza en el mercado asegurador argentino. Asesoramiento profesional e integral para personas, empresas y el campo.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">58</div>
+        <div class="label">Años de trayectoria</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">+6.000</div>
+        <div class="label">Clientes</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">8</div>
+        <div class="label">Provincias</div>
+      </div>
+    </div>
+    <div class="hero-buttons">
+      <a href="#contacto" class="btn btn-primary">Cotizá tu seguro →</a>
+      <a href="#nosotros" class="btn btn-secondary">Conocenos</a>
+    </div>
+  </div>
+</section>
+
+<!-- SEGUROS POR SEGMENTO -->
+<section class="seguros" id="seguros">
+  <div class="section-inner">
+    <div class="section-tag">Nuestros Seguros</div>
+    <h2 class="section-title">SOLUCIONES PARA CADA NECESIDAD</h2>
+    <p class="section-subtitle">Porque no existe una póliza única, diseñamos la protección que se adapta a tu realidad. Asesoramiento personalizado en cada ramo.</p>
+    <div class="seguros-grid">
+      <div class="seguro-card animate" data-num="01">
+        <div class="seguro-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.85"/></svg></div>
+        <h3>Individuos y Familias</h3>
+        <p>Protección integral para vos y tu familia. Desde tu auto hasta tu hogar, con la tranquilidad de estar respaldado por profesionales.</p>
+        <div class="seguro-products">
+          <span>Automotor</span><span>Combinado Familiar</span><span>Vida</span><span>AP</span><span>Salud</span>
+        </div>
+        <a href="https://cotiza.sancorseguros.com.ar/pas/gf&co"  target="_blank" rel="noopener noreferrer" class="btn-link">Cotizar ahora →</a>
+      </div>
+      <div class="seguro-card animate" data-num="02">
+        <div class="seguro-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M4 3l1 9h14l1-9"/><path d="M4 12a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M6 21V13h12v8"/><path d="M10 17h4"/></svg></div>
+        <h3>PyMEs</h3>
+        <p>Tu negocio merece protección experta. Coberturas diseñadas para comercios, industrias y empresas de servicios.</p>
+        <div class="seguro-products">
+          <span>Integral Comercio</span><span>TRO</span><span>RC</span><span>ART</span><span>Flota</span>
+        </div>
+        <a href="#contacto" class="btn-link">Cotizar ahora →</a>
+      </div>
+      <div class="seguro-card animate" data-num="03">
+        <div class="seguro-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V10"/><path d="M12 10C12 10 8 8 8 4a4 4 0 0 1 8 0c0 4-4 6-4 6Z"/><path d="M12 14c-3 0-5-1.5-5-4"/><path d="M12 14c3 0 5-1.5 5-4"/><path d="M12 18c-3 0-5-1.5-5-4"/><path d="M12 18c3 0 5-1.5 5-4"/></svg></div>
+        <h3>Agro / Productores</h3>
+        <p>Más de 50 años protegiendo al campo argentino. Somos especialistas en seguros agropecuarios con el know-how que tu producción necesita.</p>
+        <div class="seguro-products">
+          <span>Granizo</span><span>Multi-riesgo</span><span>Integral Agro</span><span>Hacienda</span>
+        </div>
+        <a href="#contacto" class="btn-link">Cotizar ahora →</a>
+      </div>
+      <div class="seguro-card animate" data-num="04">
+        <div class="seguro-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01"/><path d="M8 10h.01M12 10h.01M16 10h.01"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></div>
+        <h3>Empresas Medianas</h3>
+        <p>Soluciones corporativas integrales. Paquetes que cubren todos los riesgos de tu empresa en un solo lugar.</p>
+        <div class="seguro-products">
+          <span>Paquete Corporativo</span><span>ART</span><span>Flota</span><span>RC Profesional</span>
+        </div>
+        <a href="#contacto" class="btn-link">Cotizar ahora →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section id="nosotros">
+  <div class="nosotros-header">
+    <div class="section-tag">Quiénes Somos</div>
+    <h2 class="section-title">CONSTRUIMOS CONFIANZA</h2>
+  </div>
+
+  <div class="nosotros-stats-bar">
+    <div class="nosotros-stats">
+      <div class="nosotros-stat"><div class="num">39</div><div class="label">Puntos de venta</div></div>
+      <div class="nosotros-stat"><div class="num">13</div><div class="label">Colaboradores</div></div>
+      <div class="nosotros-stat"><div class="num">20+</div><div class="label">PAS asociados</div></div>
+      <div class="nosotros-stat"><div class="num">8</div><div class="label">Provincias</div></div>
+    </div>
+    <div class="timeline-bar">
+      <div><span class="timeline-year">1968</span><span class="timeline-label">Fundación</span></div>
+      <div><span class="timeline-year">2008</span><span class="timeline-label">Expansión Rosario</span></div>
+      <div><span class="timeline-year">2026</span><span class="timeline-label">IA & BINT</span></div>
+    </div>
+  </div>
+
+  <div class="nosotros-text">
+    <p class="about-text">Desde 1968, Grupo Fernández Asesores en Seguros acompaña a personas, empresas y productores agropecuarios con asesoramiento profesional, cercanía y una visión integral del mercado asegurador argentino.</p>
+    <p class="about-text">Somos una organización familiar con presencia en 8 provincias, combinamos la experiencia de 58 años con tecnología de vanguardia para ofrecer soluciones que realmente protegen lo que más importa.</p>
+    <p class="about-callout">No solo vendemos pólizas: auditamos que estés bien protegido.</p>
+  </div>
+
+  <div class="nosotros-img">
+    <img src="src/oficina.jpg" alt="Oficina Organización Fernández - Asesores en Seguros">
+  </div>
+
+  <div class="nosotros-values">
+    <div class="nosotros-value-card">
+      <div class="about-value-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      <h4>CONFIANZA</h4>
+      <p>Valor primario y fundacional</p>
+    </div>
+    <div class="nosotros-value-card">
+      <div class="about-value-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <h4>TRANSPARENCIA</h4>
+      <p>Sin letra chica</p>
+    </div>
+    <div class="nosotros-value-card">
+      <div class="about-value-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+      <h4>PROFESIONALISMO</h4>
+      <p>Conocimiento experto</p>
+    </div>
+    <div class="nosotros-value-card">
+      <div class="about-value-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <h4>COMPROMISO</h4>
+      <p>Dedicación integral</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUDITORIA DE SEGUROS -->
+<section class="auditoria" id="auditoria">
+  <div class="section-inner">
+    <div class="auditoria-header">
+      <div class="section-tag">🔍 Nuevo Servicio</div>
+      <h2 class="section-title">AUDITORÍA DE SEGUROS CON IA</h2>
+      <p class="section-subtitle">Estamos trabajando en una herramienta para analizar tus pólizas actuales con inteligencia artificial para detectar brechas de cobertura, sub-seguros y oportunidades de optimización.</p>
+    </div>
+    <div class="auditoria-grid">
+      <div class="auditoria-steps">
+        <div class="audit-step">
+          <div class="audit-step-num">1</div>
+          <div>
+            <h4>Relevamiento Digital</h4>
+            <p>Subís tus pólizas actuales. Nuestro sistema las digitaliza y analiza automáticamente.</p>
+          </div>
+        </div>
+        <div class="audit-step">
+          <div class="audit-step-num">2</div>
+          <div>
+            <h4>Análisis con IA</h4>
+            <p>La inteligencia artificial cruza tus coberturas con tu perfil de riesgo real, detectando brechas y sobreprecios.</p>
+          </div>
+        </div>
+        <div class="audit-step">
+          <div class="audit-step-num">3</div>
+          <div>
+            <h4>Informe de Optimización</h4>
+            <p>Recibís un informe claro con recomendaciones concretas: qué ajustar, qué agregar, dónde ahorrar.</p>
+          </div>
+        </div>
+        <div class="audit-step">
+          <div class="audit-step-num">4</div>
+          <div>
+            <h4>Asesoramiento Personalizado</h4>
+            <p>Un asesor experto te guía en la implementación de las mejoras, sin presión y a tu ritmo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="auditoria-cta">
+        <h3 style="font-size:20px;font-weight:700;color:var(--celeste)">Auditoría PyME</h3>
+        <div class="price">USD 20-30</div>
+        <div class="price-label">por póliza auditada</div>
+        <ul class="features">
+          <li>Análisis completo de todas tus coberturas</li>
+          <li>Detección de brechas y sub-seguros</li>
+          <li>Comparativa de mercado actualizada</li>
+          <li>Recomendaciones de optimización</li>
+          <li>Sesión de asesoramiento incluida</li>
+          <li>Informe ejecutivo descargable</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center">Próximamente →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA PAS -->
+<section class="pas" id="pas">
+  <div class="section-inner">
+    <div class="pas-header">
+      <div class="section-tag">Para Productores</div>
+      <h2 class="section-title">Sumate como PAS a Grupo Fernández</h2>
+      <p class="section-subtitle">Potenciá tu producción con nuestra tecnología, respaldo institucional y 58 años de experiencia en el mercado asegurador.</p>
+    </div>
+    <div class="pas-grid">
+      <div class="pas-benefits">
+        <div class="pas-benefit">
+          <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div>
+            <h4>Plataforma BintIA</h4>
+            <p>Accedé a herramientas tecnológicas de última generación: cotización por WhatsApp, gestión digital, BI y más.</p>
+          </div>
+        </div>
+        <div class="pas-benefit">
+          <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <div>
+            <h4>Know-how del Negocio</h4>
+            <p>Capacitación continua, soporte experto y acceso al conocimiento acumulado de 58 años en el mercado.</p>
+          </div>
+        </div>
+        <div class="pas-benefit">
+          <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div>
+            <h4>Respaldo Institucional</h4>
+            <p>Operá bajo el paraguas de una organización reconocida, con mejores condiciones de negociación con aseguradoras.</p>
+          </div>
+        </div>
+        <div class="pas-benefit">
+          <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div>
+            <h4>Comunidad PAS</h4>
+            <p>Formá parte de una red de más de 20 productores que comparten experiencias, leads y crecimiento mutuo.</p>
+          </div>
+        </div>
+        <div class="pas-benefit">
+          <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+          <div>
+            <h4>Herramientas de Gestión</h4>
+            <p>CRM compartido, gestión de cartera, alertas de vencimiento y reportes de producción en tiempo real.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pas-cta-card">
+        <svg viewBox="0 0 297.6 298" xmlns="http://www.w3.org/2000/svg" style="width:72px;height:72px;margin-bottom:24px">
+          <path fill="#4B9ECA" d="M287.8,149.5c0.4,26.4-6.8,50.6-20.9,73c-11.5,18.2-26.4,32.7-44.8,43.8c-18.5,11.1-38.5,17.6-60.1,18.9c-6.8,0.4-13.6,1.3-20.5-0.1c0.2-0.2,0.3-0.5,0.5-0.5c6,0.2,6.3-3.9,6.2-8.3c0.8-2.7,1.5-5.4,1.3-8.2c3.7-27.2,14.2-51.5,32.3-72.1c21.7-24.7,48.8-40.1,81.4-45.6c1.1-0.2,2.2-0.5,3.3-0.6c4,0,8-0.7,12-1.4C281.6,148.4,284.9,147.2,287.8,149.5z"/>
+          <path fill="#12A183" d="M175.2,15.8c-7.2-0.1-14.3-1.7-21.6-1.5c-3.1,0.1-4.2,0.8-4,4c0.2,3.7,1.4,7.4,0.7,11.1c-2.1-0.3-0.4-2.1-0.8-2.5c-0.5,13.6-4.4,26.9-9.6,39.7c-6.4,15.9-15.9,30-27.8,42.3c-11.2,11.7-24.2,21.1-38.9,28.1C60.4,143.1,47,147.1,33,149.4c-4.4,0.3-8.7,0.8-13,1.3c-1.3,0.2-2.6,0.2-3.8-0.6C15.5,129.5,20,109.9,29,91.5C48.3,52.2,79.3,27.3,121.8,17c16.8-4.1,33.8-4.7,51-2C173.6,15.1,174.4,15.5,175.2,15.8z"/>
+          <path fill="#2E5AA7" d="M16.2,150.1c1.3-0.1,2.7-0.2,4-0.3c4.2-0.3,8.4-0.2,12.6,0.1c13.1,1.8,25.6,5.6,37.5,11.1c13,6,24.8,13.8,35.4,23.4c11,9.9,19.8,21.4,27.1,34.1c7.3,12.6,12.1,26.2,14.9,40.5c0.5,2.3,1,4.6,1.4,7c0,3.3,0.9,6.6-0.1,9.9c0,0.4-0.1,0.7-0.1,1.1c0,7.6,0,7.6-7.5,8.1c-31.1-2.4-58.2-14.2-81.2-35.2c-23.7-21.7-37.8-48.6-42.8-80.3C16.4,163.1,16,156.6,16.2,150.1z"/>
+          <path fill="#1F8D48" d="M287.8,149.5c-3.3,0-6.5,0-9.8,0c-5.3,0.5-10.6-0.1-15.9-0.7c-24.9-4.5-47.2-14.8-66.2-31.4c-26-22.7-41.5-51.4-46.3-85.7c-0.2-1.1-0.2-2.2-0.2-3.4c0.4-3.5-1-6.9-0.8-10.4c0.1-2.8,0.9-4.1,4.2-4.1c7.5,0,15,0.8,22.4,1.9c16.3,2.3,31.4,8.1,45.4,16.4c27.8,16.4,47.6,39.8,59,70.1C285.3,117.5,288.4,133.2,287.8,149.5z"/>
+        </svg>
+        <h3>¿Sos PAS y querés crecer?</h3>
+        <p>Unite a Grupo Fernández y accedé a la plataforma tecnológica más innovadora del mercado, con el respaldo de una organización sólida y experimentada.</p>
+        <a href="https://wa.me/5493468562921" class="btn btn-primary" style="width:100%;justify-content:center">Quiero más información →</a>
+        <p class="pas-cta-note">Sin compromiso. Te contactamos en menos de 24 horas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="section-inner">
+    <div class="contacto-header">
+      <div class="section-tag">Contacto</div>
+      <h2 class="section-title">Hablemos de tu protección</h2>
+      <p class="section-subtitle">Completá el formulario y un asesor te contacta en menos de 24 horas. Sin compromiso, sin presión.</p>
+    </div>
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <div class="contacto-trust">
+          <div class="trust-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Respuesta en &lt;24hs</div>
+          <div class="trust-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Sin compromiso</div>
+          <div class="trust-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> +6.000 clientes</div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h4>Nuestras oficinas</h4>
+            <p>Corral de Bustos — Córdoba (Casa Central, desde 1968)</p>
+            <p>Rosario — Santa Fe (desde 2008)</p>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <h4>Email</h4>
+            <p>info@grupofernandez.com.ar</p>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div>
+            <h4>Redes Sociales</h4>
+            <p>@grupofernandez.seguros</p>
+          </div>
+        </div>
+        <a href="https://wa.me/5493468562921" target="_blank" rel="noopener noreferrer" class="contacto-whatsapp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Chateá por WhatsApp
+        </a>
+      </div>
+      <div class="contacto-form">
+        <h3>Solicitar Cotización</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label>Teléfono / WhatsApp</label>
+            <input type="tel" placeholder="+54 9...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label>¿Qué tipo de seguro necesitás?</label>
+          <select>
+            <option value="">Seleccioná una opción</option>
+            <option>Automotor</option>
+            <option>Combinado Familiar / Hogar</option>
+            <option>Agropecuario (Granizo / Multi-riesgo)</option>
+            <option>Integral de Comercio</option>
+            <option>ART</option>
+            <option>Accidentes Personales</option>
+            <option>Seguros de Salud</option>
+            <option>Vida / Retiro</option>
+            <option>Paquete Corporativo / Empresa</option>
+            <option>Auditoría de Seguros con IA</option>
+            <option>Quiero ser PAS / Socio</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje (opcional)</label>
+          <textarea placeholder="Contanos qué necesitás..."></textarea>
+        </div>
+        <button class="form-submit" onclick="alert('Gracias por tu consulta. Un asesor te contactará en menos de 24 horas.\n\n(Este es un prototipo - en producción se conectará al CRM)')">Enviar Consulta →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:12px">
+          <svg viewBox="0 0 297.6 298" xmlns="http://www.w3.org/2000/svg" style="width:48px;height:48px">
+            <path fill="#4B9ECA" d="M287.8,149.5c0.4,26.4-6.8,50.6-20.9,73c-11.5,18.2-26.4,32.7-44.8,43.8c-18.5,11.1-38.5,17.6-60.1,18.9c-6.8,0.4-13.6,1.3-20.5-0.1c0.2-0.2,0.3-0.5,0.5-0.5c6,0.2,6.3-3.9,6.2-8.3c0.8-2.7,1.5-5.4,1.3-8.2c3.7-27.2,14.2-51.5,32.3-72.1c21.7-24.7,48.8-40.1,81.4-45.6c1.1-0.2,2.2-0.5,3.3-0.6c4,0,8-0.7,12-1.4C281.6,148.4,284.9,147.2,287.8,149.5z"/>
+            <path fill="#12A183" d="M175.2,15.8c-7.2-0.1-14.3-1.7-21.6-1.5c-3.1,0.1-4.2,0.8-4,4c0.2,3.7,1.4,7.4,0.7,11.1c-2.1-0.3-0.4-2.1-0.8-2.5c-0.5,13.6-4.4,26.9-9.6,39.7c-6.4,15.9-15.9,30-27.8,42.3c-11.2,11.7-24.2,21.1-38.9,28.1C60.4,143.1,47,147.1,33,149.4c-4.4,0.3-8.7,0.8-13,1.3c-1.3,0.2-2.6,0.2-3.8-0.6C15.5,129.5,20,109.9,29,91.5C48.3,52.2,79.3,27.3,121.8,17c16.8-4.1,33.8-4.7,51-2C173.6,15.1,174.4,15.5,175.2,15.8z"/>
+            <path fill="#2E5AA7" d="M16.2,150.1c1.3-0.1,2.7-0.2,4-0.3c4.2-0.3,8.4-0.2,12.6,0.1c13.1,1.8,25.6,5.6,37.5,11.1c13,6,24.8,13.8,35.4,23.4c11,9.9,19.8,21.4,27.1,34.1c7.3,12.6,12.1,26.2,14.9,40.5c0.5,2.3,1,4.6,1.4,7c0,3.3,0.9,6.6-0.1,9.9c0,0.4-0.1,0.7-0.1,1.1c0,7.6,0,7.6-7.5,8.1c-31.1-2.4-58.2-14.2-81.2-35.2c-23.7-21.7-37.8-48.6-42.8-80.3C16.4,163.1,16,156.6,16.2,150.1z"/>
+            <path fill="#1F8D48" d="M287.8,149.5c-3.3,0-6.5,0-9.8,0c-5.3,0.5-10.6-0.1-15.9-0.7c-24.9-4.5-47.2-14.8-66.2-31.4c-26-22.7-41.5-51.4-46.3-85.7c-0.2-1.1-0.2-2.2-0.2-3.4c0.4-3.5-1-6.9-0.8-10.4c0.1-2.8,0.9-4.1,4.2-4.1c7.5,0,15,0.8,22.4,1.9c16.3,2.3,31.4,8.1,45.4,16.4c27.8,16.4,47.6,39.8,59,70.1C285.3,117.5,288.4,133.2,287.8,149.5z"/>
+          </svg>
+          <div>
+            <div style="font-weight:800;font-size:16px;color:white">GRUPO FERNÁNDEZ</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:2px">ASESORES EN SEGUROS</div>
+          </div>
+        </div>
+        <p>58 años construyendo confianza en el mercado asegurador argentino. Protegemos lo que más importa: a las personas, a las empresas y al campo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Seguros</h4>
+        <a href="#seguros">Individuos</a>
+        <a href="#seguros">PyMEs</a>
+        <a href="#seguros">Agropecuario</a>
+        <a href="#seguros">Empresas</a>
+        <a href="#auditoria">Auditoría IA</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#nosotros">Quiénes Somos</a>
+        <a href="#pas">Para PAS</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">SSN - Superintendencia</a>
+        <a href="#">Defensa al Consumidor</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Grupo Fernández Asesores en Seguros. Todos los derechos reservados.</span>
+      <span>Inscripto en SSN bajo N° [completar]</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FAB -->
+<a href="https://wa.me/5493468562921" target="_blank" rel="noopener noreferrer" class="whatsapp-fab">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="whatsapp-tooltip">Chateá con un asesor</div>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
+});
+
+// Scroll animation
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.animate').forEach(el=>obs.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){t.scrollIntoView({behavior:'smooth'});document.getElementById('navLinks').classList.remove('active')}
+  });
+});
+</script>
+</body>
+</html>
