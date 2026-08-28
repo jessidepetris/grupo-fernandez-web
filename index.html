@@ -100,16 +100,16 @@
 <section class="hero" id="home">
   <div class="hero-bg"></div>
   <div class="hero-inner">
-    <h1>PROTEGEMOS LO QUE<br><em>MÁS IMPORTA</em></h1>
-    <p>58 años construyendo confianza en el mercado asegurador argentino. Asesoramiento profesional e integral para personas, empresas y el campo.</p>
+    <h1>AGILIDAD DIGITAL<br><em>+ TRATO HUMANO</em></h1>
+    <p>Desde 1968</p>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="num">58</div>
         <div class="label">Años de trayectoria</div>
       </div>
       <div class="hero-stat">
-        <div class="num">+6.000</div>
-        <div class="label">Clientes</div>
+        <div class="num">2</div>
+        <div class="label">Ofiicinas</div>
       </div>
       <div class="hero-stat">
         <div class="num">8</div>
@@ -159,12 +159,12 @@
       </div>
       <div class="seguro-card animate" data-num="04">
         <div class="seguro-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01"/><path d="M8 10h.01M12 10h.01M16 10h.01"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></div>
-        <h3>Empresas Medianas</h3>
+        <h3>Empresas</h3>
         <p>Soluciones corporativas integrales. Paquetes que cubren todos los riesgos de tu empresa en un solo lugar.</p>
         <div class="seguro-products">
           <span>Paquete Corporativo</span><span>ART</span><span>Flota</span><span>RC Profesional</span>
         </div>
-        <a href="javascript:void(0)" onclick="openChatbot('Empresas Medianas')" class="btn-link">Cotizar ahora →</a>
+        <a href="javascript:void(0)" onclick="openChatbot('Empresas')" class="btn-link">Cotizar ahora →</a>
       </div>
     </div>
   </div>
@@ -179,15 +179,15 @@
 
   <div class="nosotros-stats-bar">
     <div class="nosotros-stats">
-      <div class="nosotros-stat"><div class="num">39</div><div class="label">Puntos de venta</div></div>
-      <div class="nosotros-stat"><div class="num">13</div><div class="label">Colaboradores</div></div>
-      <div class="nosotros-stat"><div class="num">20+</div><div class="label">PAS asociados</div></div>
+      <div class="nosotros-stat"><div class="num">70</div><div class="label">Puntos de venta</div></div>
+      <div class="nosotros-stat"><div class="num">13</div><div class="label">Staff Colaboradores</div></div>
+      <div class="nosotros-stat"><div class="num">50+</div><div class="label">Socios Estratégicos</div></div>
       <div class="nosotros-stat"><div class="num">8</div><div class="label">Provincias</div></div>
     </div>
     <div class="timeline-bar">
       <div><span class="timeline-year">1968</span><span class="timeline-label">Fundación</span></div>
       <div><span class="timeline-year">2008</span><span class="timeline-label">Expansión Rosario</span></div>
-      <div><span class="timeline-year">2026</span><span class="timeline-label">BINTIA</span></div>
+      <div><span class="timeline-year">2026</span><span class="timeline-label">BINTIA BROKERS</span></div>
     </div>
   </div>
 
@@ -198,7 +198,19 @@
   </div>
 
   <div class="nosotros-img">
-    <img src="src/oficina.jpg" alt="Oficina Organización Fernández - Asesores en Seguros" loading="lazy">
+    <div class="oficina-slider" id="oficinaSlider">
+      <div class="oficina-slider-track" id="oficinaSliderTrack">
+        <img src="src/oficina-1.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 1" loading="lazy">
+        <img src="src/oficina-2.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 2" loading="lazy">
+        <img src="src/oficina-3.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 3" loading="lazy">
+        <img src="src/oficina-4.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 4" loading="lazy">
+        <img src="src/oficina-5.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 5" loading="lazy">
+        <img src="src/oficina-6.jfif" alt="Oficina Organización Fernández - Asesores en Seguros 6" loading="lazy">
+      </div>
+      <button class="oficina-slider-btn prev" onclick="oficinaSliderMove(-1)" aria-label="Imagen anterior">‹</button>
+      <button class="oficina-slider-btn next" onclick="oficinaSliderMove(1)" aria-label="Imagen siguiente">›</button>
+      <div class="oficina-slider-dots" id="oficinaSliderDots"></div>
+    </div>
   </div>
 
   <div class="nosotros-values">
@@ -265,17 +277,42 @@
         </div>
       </div>
       <div class="auditoria-cta">
-        <h3 style="font-size:20px;font-weight:700;color:var(--celeste)">Auditoría PyME</h3>
-        <div class="price">USD 20-30</div>
-        <div class="price-label">por póliza auditada</div>
-        <ul class="features">
-          <li>Análisis completo de todas tus coberturas</li>
-          <li>Detección de brechas y sub-seguros</li>
-          <li>Comparativa de mercado actualizada</li>
-          <li>Recomendaciones de optimización</li>
-          <li>Sesión de asesoramiento incluida</li>
-          <li>Informe ejecutivo descargable</li>
-        </ul>
+        <h3 style="font-size:26px;font-weight:800;color:var(--celeste)">Auditoría PyME</h3>
+        <p class="audit-report-label">Qué incluye el informe</p>
+        <div class="audit-report-grid">
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>A — Resumen Ejecutivo</h5><p>Síntesis del análisis y conclusiones clave.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>B — Ficha Técnica</h5><p>Datos identificatorios, vigencias, sumas aseguradas.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>C — Matriz de Coberturas</h5><p>Detalle por cobertura con estados.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>D — Obligaciones y Cargas</h5><p>Deberes del asegurado y plazos.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>E — Puntos Rojos</h5><p>Hallazgos críticos con semáforo.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>F — Recomendaciones</h5><p>Acciones sugeridas al PAS y al cliente.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>G — Coberturas Faltantes</h5><p>Detección contra el baseline.</p></div>
+          </div>
+          <div class="audit-report-item">
+            <span class="check">✓</span>
+            <div><h5>H — Comparativo</h5><p>Requiere tipo H y 2 pólizas cargadas.</p></div>
+          </div>
+        </div>
         <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center">Próximamente →</a>
       </div>
     </div>
@@ -547,6 +584,44 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     }
   });
 });
+
+// Slider de fotos de la oficina
+(function(){
+  const track=document.getElementById('oficinaSliderTrack');
+  const dotsWrap=document.getElementById('oficinaSliderDots');
+  if(!track||!dotsWrap) return;
+  const slides=track.children.length;
+  let index=0;
+  let timer;
+
+  for(let i=0;i<slides;i++){
+    const dot=document.createElement('button');
+    dot.className='dot'+(i===0?' active':'');
+    dot.setAttribute('aria-label','Ir a la imagen '+(i+1));
+    dot.addEventListener('click',()=>oficinaSliderGo(i));
+    dotsWrap.appendChild(dot);
+  }
+
+  function update(){
+    track.style.transform='translateX(-'+(index*100)+'%)';
+    dotsWrap.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===index));
+  }
+
+  window.oficinaSliderGo=function(i){
+    index=(i+slides)%slides;
+    update();
+    resetAutoplay();
+  };
+  window.oficinaSliderMove=function(dir){
+    oficinaSliderGo(index+dir);
+  };
+
+  function resetAutoplay(){
+    clearInterval(timer);
+    timer=setInterval(()=>oficinaSliderMove(1),5000);
+  }
+  resetAutoplay();
+})();
 
 // Accesibilidad: ocultar SVGs decorativos de lectores de pantalla
 document.addEventListener('DOMContentLoaded',()=>{

@@ -113,7 +113,17 @@ section{padding:100px 24px}
 .timeline-year{display:block;font-size:14px;font-weight:800;color:var(--white);margin-bottom:2px}
 .timeline-label{display:block;font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:0.5px}
 .nosotros-img{max-width:960px;margin:0 auto 56px;padding:0 24px}
-.nosotros-img img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lg);display:block;object-fit:cover;max-height:340px}
+.oficina-slider{position:relative;border-radius:var(--radius);box-shadow:var(--shadow-lg);overflow:hidden}
+.oficina-slider-track{display:flex;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
+.oficina-slider-track img{width:100%;flex:0 0 100%;display:block;object-fit:cover;height:340px}
+.oficina-slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border:none;border-radius:50%;background:rgba(10,30,92,0.55);color:var(--white);font-size:24px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition);z-index:2}
+.oficina-slider-btn:hover{background:rgba(10,30,92,0.85)}
+.oficina-slider-btn.prev{left:14px}
+.oficina-slider-btn.next{right:14px}
+.oficina-slider-dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:8px;z-index:2}
+.oficina-slider-dots .dot{width:9px;height:9px;padding:0;border:none;border-radius:50%;background:rgba(255,255,255,0.55);cursor:pointer;transition:var(--transition)}
+.oficina-slider-dots .dot.active{background:var(--white);width:22px;border-radius:5px}
+@media(max-width:600px){.oficina-slider-track img{height:220px}.oficina-slider-btn{width:34px;height:34px;font-size:20px}}
 .nosotros-values{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 24px}
 .nosotros-value-card{background:rgba(255,255,255,0.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.8);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow);transition:var(--transition)}
 .nosotros-value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
@@ -140,11 +150,14 @@ section{padding:100px 24px}
 .audit-step h4{font-size:16px;font-weight:700;margin-bottom:4px}
 .audit-step p{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5}
 .auditoria-cta{background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:40px;text-align:center}
-.auditoria-cta .price{font-size:48px;font-weight:800;color:var(--green-light);line-height:1;margin:16px 0 4px}
-.auditoria-cta .price-label{font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:24px}
-.auditoria-cta .features{list-style:none;text-align:left;margin-bottom:32px}
-.auditoria-cta .features li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:rgba(255,255,255,0.8);display:flex;align-items:center;gap:10px}
-.auditoria-cta .features li::before{content:'✓';color:var(--green-light);font-weight:700}
+.audit-report-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,0.5);margin:20px 0 14px;text-align:left}
+.audit-report-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px;text-align:left}
+.audit-report-item{display:flex;gap:10px;padding:12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;transition:var(--transition)}
+.audit-report-item:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.15)}
+.audit-report-item .check{flex-shrink:0;width:18px;height:18px;margin-top:1px;border-radius:5px;background:var(--green);color:var(--white);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.audit-report-item h5{font-size:13px;font-weight:700;margin-bottom:2px;color:var(--white)}
+.audit-report-item p{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.4}
+@media(max-width:600px){.audit-report-grid{grid-template-columns:1fr}}
 
 /* === PAS === */
 .pas{background:var(--gray-light)}
