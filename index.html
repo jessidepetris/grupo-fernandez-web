@@ -424,11 +424,11 @@
         </a>
       </div>
       <form class="contacto-form" id="contactoForm" novalidate>
-        <!-- FormSubmit: la primera consulta real envía un mail de confirmación a contacto@grupofernandez.ar que hay que aprobar con un clic para activar el envío -->
-        <input type="hidden" name="_subject" value="Nueva consulta desde el sitio web — Grupo Fernández">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- Web3Forms: las consultas llegan a contacto@grupofernandez.ar -->
+        <input type="hidden" name="access_key" value="4e3cc261-6454-4cdd-90b4-f61175baaa68">
+        <input type="hidden" name="subject" value="Nueva consulta desde el sitio web — Grupo Fernández">
+        <input type="hidden" name="from_name" value="Sitio Web Grupo Fernández">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <h3>Solicitar Cotización</h3>
         <div class="form-row">
           <div class="form-group">
@@ -650,12 +650,12 @@ document.getElementById('contactoForm').addEventListener('submit',async function
   btn.disabled=true;
   msg.style.display='none';
   try{
-    const res=await fetch('https://formsubmit.co/ajax/contacto@grupofernandez.ar',{
+    const res=await fetch('https://api.web3forms.com/submit',{
       method:'POST',
-      headers:{'Accept':'application/json'},
       body:new FormData(this)
     });
-    if(res.ok){
+    const data=await res.json();
+    if(data.success){
       msg.style.display='block';
       msg.className='form-msg form-msg-success';
       msg.innerHTML='<strong>¡Consulta enviada!</strong> Un asesor te va a contactar en menos de 24 horas.';
@@ -663,7 +663,7 @@ document.getElementById('contactoForm').addEventListener('submit',async function
       btn.textContent='Enviar Consulta →';
       btn.disabled=false;
     } else {
-      throw new Error('Error al enviar');
+      throw new Error(data.message||'Error al enviar');
     }
   } catch(err){
     msg.style.display='block';
