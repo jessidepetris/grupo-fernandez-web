@@ -180,7 +180,7 @@
   <div class="nosotros-stats-bar">
     <div class="nosotros-stats">
       <div class="nosotros-stat"><div class="num">70</div><div class="label">Puntos de venta</div></div>
-      <div class="nosotros-stat"><div class="num">13</div><div class="label">Staff Colaboradores</div></div>
+      <div class="nosotros-stat"><div class="num">15</div><div class="label">Staff</div></div>
       <div class="nosotros-stat"><div class="num">50+</div><div class="label">Socios Estratégicos</div></div>
       <div class="nosotros-stat"><div class="num">8</div><div class="label">Provincias</div></div>
     </div>
@@ -332,8 +332,8 @@
         <div class="pas-benefit">
           <div class="pas-benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
           <div>
-            <h4>Plataforma BintIA</h4>
-            <p>Accedé a herramientas tecnológicas de última generación: cotización por WhatsApp, gestión digital, BI y más.</p>
+            <h4>Auditoría con IA</h4>
+            <p>Accedé a herramientas tecnológicas de última generación para análisis de pólizas con IA.</p>
           </div>
         </div>
         <div class="pas-benefit">
@@ -751,7 +751,8 @@ function sendChatMessage(){
 
 function sendToWhatsApp(){
   const msg='¡Hola! Me gustaría cotizar un seguro de '+chatData.seguro+'.\n\nMis datos:\n👤 Nombre: '+chatData.nombre+'\n📱 Teléfono: '+chatData.telefono+'\n📧 Email: '+chatData.email+'\n📍 Localidad: '+chatData.localidad;
-  window.open('https://wa.me/5493468562921?text='+encodeURIComponent(msg),'_blank');
+  const numero=chatData.seguro.startsWith('PyMEs')?'5493468559452':chatData.seguro.startsWith('Agro')?'5493468525031':chatData.seguro.startsWith('Empresas')?'5493413441536':'5493468562921';
+  window.open('https://wa.me/'+numero+'?text='+encodeURIComponent(msg),'_blank');
 }
 </script>
 </body>
