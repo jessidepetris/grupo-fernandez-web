@@ -174,7 +174,7 @@
 <section id="nosotros">
   <div class="nosotros-header">
     <div class="section-tag">Quiénes Somos</div>
-    <h2 class="section-title">CONSTRUIMOS CONFIANZA</h2>
+    <h2 class="section-title">SOLUCIONES ÁGILES. VÍNCULOS DURADEROS.</h2>
   </div>
 
   <div class="nosotros-stats-bar">
@@ -424,11 +424,11 @@
         </a>
       </div>
       <form class="contacto-form" id="contactoForm" novalidate>
-        <!-- Web3Forms: registrá info@grupofernandez.com.ar en web3forms.com y reemplazá el value de access_key -->
-        <input type="hidden" name="access_key" value="REEMPLAZAR_CON_CLAVE_WEB3FORMS">
-        <input type="hidden" name="subject" value="Nueva consulta desde el sitio web — Grupo Fernández">
-        <input type="hidden" name="from_name" value="Sitio Web Grupo Fernández">
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- FormSubmit: la primera consulta real envía un mail de confirmación a contacto@grupofernandez.ar que hay que aprobar con un clic para activar el envío -->
+        <input type="hidden" name="_subject" value="Nueva consulta desde el sitio web — Grupo Fernández">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <h3>Solicitar Cotización</h3>
         <div class="form-row">
           <div class="form-group">
@@ -650,12 +650,12 @@ document.getElementById('contactoForm').addEventListener('submit',async function
   btn.disabled=true;
   msg.style.display='none';
   try{
-    const res=await fetch('https://api.web3forms.com/submit',{
+    const res=await fetch('https://formsubmit.co/ajax/contacto@grupofernandez.ar',{
       method:'POST',
+      headers:{'Accept':'application/json'},
       body:new FormData(this)
     });
-    const data=await res.json();
-    if(data.success){
+    if(res.ok){
       msg.style.display='block';
       msg.className='form-msg form-msg-success';
       msg.innerHTML='<strong>¡Consulta enviada!</strong> Un asesor te va a contactar en menos de 24 horas.';
@@ -663,7 +663,7 @@ document.getElementById('contactoForm').addEventListener('submit',async function
       btn.textContent='Enviar Consulta →';
       btn.disabled=false;
     } else {
-      throw new Error(data.message||'Error al enviar');
+      throw new Error('Error al enviar');
     }
   } catch(err){
     msg.style.display='block';
