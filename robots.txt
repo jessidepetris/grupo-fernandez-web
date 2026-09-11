@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://www.grupofernandez.com.ar/sitemap.xml
+Sitemap: https://www.grupofernandez.ar/sitemap.xml
